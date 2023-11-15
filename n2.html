@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N2</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body >
+   <!-- <header></header> -->
+<h1>Hello Buddy!</h1>
+<h2>Here is the question that i'd like to answer!</h2>
+<p>You should click this under this text button to start</p>
+<div style="position: relative;">
+<button class="button" onclick="myunF()">Click it</button>
+</div>
+<p id="id"></p>
+    <script>    
+function myunF() {
+    let  text;
+    let img;
+    let mark = prompt('Ask which question'); 
+switch (mark) { 
+            case "1":  
+                text = "You chose: yout favorite film" 
+ ; 
+                break; 
+            case "2":  
+                text = "You chose: Character"; 
+                break; 
+            case "3":  
+                text = "You chose: Whche episode"; 
+                break; 
+            case "4":  
+                text = "You chose: Good ending"; 
+                break; 
+            case "5":  
+                text = "You chose: explian meaning of film"; 
+                break; 
+            default: 
+                text = "Your choice is not recognized.STAr wars is the best"; 
+                
+        }
+        document.getElementById("id").innerHTML = text
+        document.createElement('img') 
+    }
+                </script>
+        
+</body>
+</html>
