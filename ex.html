@@ -4,29 +4,46 @@
     <title>Document</title>
 </head>
 <body>
-    
+<!--     
 <h2>What Can JavaScript Do?</h2>
 
 <p>JavaScript can change HTML attribute values.</p>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p> -->
 
 <!-- <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
 
 <img id="myImage" src="https://www.w3schools.com/js/pic_bulbon.gif" style="width:100px">
 
 <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> -->
-<button onclick="turn()">click to turn on</button>
-<img id="img" src="" alt="">
-<button onclick="tarn()">click to turn on</button>
+<!-- <button id="img" onclick="turn(on)"><p id="img">click to turn on</p></button>
+
+<button id="imd" onclick="turn(off)">click to turn off</button>
     <script>
-        function turn(sw) {
-            let sw = 1 , 2 
-        document.getElementById('img').scr="https://www.w3schools.com/js/pic_bulboff.gif"
-        }
-        function tarn {
-        document.getElementById('img').scr="https://www.w3schools.com/js/pic_bulbon.gif"
-        }
-    </script>
+        function turn(on , off) {
+            let on;  
+         let off;  document.getElementById('img').scr="https://www.w3schools.com/js/pic_bulbon.gif" = off
+         document.getElementById('imd').scr="https://www.w3schools.com/js/pic_bulboff.gif" = on
+        } -->
+        
+    <!-- </script> -->
+    
+<p>Нажмите на кнопку, чтобы изменить изображение:</p>
+
+<img id="myImage" src="" style="width:100px">
+
+<button onclick="changeImage('on')">Включить</button>
+<button onclick="changeImage('off')">Выключить</button>
+
+<script>
+function changeImage(state) {
+  let image = document.getElementById('myImage');
+  if (state == 'on') {
+    image.src = 'https://www.w3schools.com/js/pic_bulbon.gif';
+  } else if (state == 'off') {
+    image.src = 'https://www.w3schools.com/js/pic_bulboff.gif';
+  }
+}
+</script>
 </body>
 </html>
